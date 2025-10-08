@@ -9,11 +9,11 @@
   --pink: #FFF6F8;    /* super light pink background */
 }
 
-a:focus-visible,
+/* a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--sage);
   outline-offset: 2px;
-}
+} */
 
 @theme inline {
   --color-background: var(--background);
@@ -29,21 +29,7 @@ button:focus-visible {
   }
 }
 
-.cl-formFieldInput {
-  border-radius: 10px !important;
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
-}
 
-.cl-footer {
-  background: transparent;
-  box-shadow: none;
-  border: none;
-}
-.cl-cardBox .cl-signIn-start {
-  background: transparent;
-  box-shadow: none;
-  border: none;
-}
 
 body {
   background: var(--pink);

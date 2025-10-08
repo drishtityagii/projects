@@ -1,0 +1,84 @@
+/* === Clerk overrides === */
+.cl-card,
+.cl-cardBox,
+.cl-rootBox {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.cl-card::before,
+.cl-card::after {
+  display: none !important;
+}
+
+/* text, fonts, and theme */
+.cl-headerTitle,
+.cl-headerSubtitle,
+.cl-label,
+.cl-formButtonPrimary,
+.cl-footerActionLink,
+.cl-formFieldInput {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
+}
+
+.cl-headerTitle {
+  color: black !important;
+  font-size: 1.875rem !important; /* text-3xl */
+}
+.cl-headerSubtitle {
+  color: #4b5563 !important;
+}
+
+.cl-button__google, .cl-button__apple, .cl-phoneInputBox {
+  background-color: white;
+}
+
+.cl-formFieldHintText, .cl-formFieldAction {
+    color: var(--sage)
+}
+/* buttons */
+.cl-formButtonPrimary {
+  background-color: var(--sage) !important;
+  border-radius: 0.9rem !important;
+  font-weight: 500 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.cl-formButtonPrimary:hover {
+  opacity: 0.9 !important;
+}
+
+
+
+/* inputs */
+.cl-formFieldInput {
+  border-radius: 0.5rem !important;
+  font-size: 1rem !important;
+}
+
+.cl-dividerLine {
+  background-color: var(--sage) !important;
+  opacity: 0.25 !important;
+}
+.cl-footerActionLink {
+  color: var(--sage) !important;
+}
+.cl-footerActionLink:hover {
+  opacity: 0.8 !important;
+}
+
+/* hide powered by / dev badge */
+.cl-poweredBy,
+.cl-badge {
+  display: none !important;
+}
+
+.cl-internal-1dauvpw {
+    display: none;
+}
+
+.cl-footer {
+    background: transparent !important;
+}

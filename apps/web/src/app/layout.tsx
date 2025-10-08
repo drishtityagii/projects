@@ -1,6 +1,7 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
-import './globals.css'
+import "./globals.css";
+import "./styles/clerk.css";
 import React from "react";
 
 export const metadata: Metadata = {
