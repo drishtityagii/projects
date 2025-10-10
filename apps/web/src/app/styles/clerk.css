@@ -82,3 +82,25 @@
 .cl-footer {
     background: transparent !important;
 }
+
+/* === Clerk theming overrides === */
+.cl-userButtonTrigger {
+  background-color: var(--pink) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.cl-userButtonTrigger:hover {
+  background-color: #f9cfd7 !important; /* slightly darker pink */
+}
+
+.cl-userButtonPopoverCard {
+  border-radius: 0.75rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* optional – tweak Clerk dropdown text colors */
+.cl-userButtonPopoverCard,
+.cl-userButtonPopoverMain {
+  color: #333 !important;
+}

@@ -9,6 +9,7 @@ export default function Page() {
       <main className="flex-1 flex items-center justify-center py-16">
       <SignIn
       path="/sign-in" routing="path" signUpUrl="/sign-up"
+      afterSignInUrl="/dashboard" redirectUrl="/dashboard"
       />
       </main>
     </div>
