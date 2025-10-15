@@ -104,3 +104,78 @@
 .cl-userButtonPopoverMain {
   color: #333 !important;
 }
+
+/* === Clerk User Profile overrides === */
+
+/* overall background + layout */
+.cl-cardBox{
+  background-color: transparent !important;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
+}
+
+.cl-navbarMobileMenuRow {
+  background-color: transparent;
+}
+
+.cl-navbar {
+  background-color: transparent !important;
+}
+
+.cl-scrollBox {
+  background-color: transparent;
+}
+
+/* card area (remove ugly box or background) */
+.cl-userProfile-card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* header/title */
+.cl-userProfile-headerTitle {
+  color: #000 !important;
+  font-size: 1.875rem !important; /* text-3xl */
+  font-weight: 600 !important;
+}
+
+/* label text and buttons */
+.cl-userProfile-sectionTitle,
+.cl-userProfile-formLabel {
+  color: #4b5563 !important;
+  font-weight: 500 !important;
+}
+
+/* buttons */
+.cl-formButtonPrimary {
+  background-color: var(--pink-200, #fbcfe8) !important;
+  color: white !important;
+  border-radius: 0.9rem !important;
+  font-weight: 600 !important;
+  transition: background 0.2s ease-in-out;
+}
+
+.cl-formButtonPrimary:hover {
+  background-color: var(--pink-300, #f9a8d4) !important;
+}
+
+/* links (e.g., “Add another email address”) */
+.cl-link {
+  color: #e9afa3 !important;
+  text-decoration: underline !important;
+}
+
+.cl-link:hover {
+  color: #d48b86 !important;
+}
+
+/* input fields */
+.cl-formFieldInput {
+  border-radius: 0.5rem !important;
+  border-color: #e5e7eb !important;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
+}
+
+.cl-footer {
+  background: transparent !important;
+}

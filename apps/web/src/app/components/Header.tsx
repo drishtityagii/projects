@@ -22,12 +22,9 @@ export default function Header() {
             >
               Profile
             </Link>
-
-            {/* Option 2: optional Clerk avatar dropdown (Sign out, etc.) */}
  
           </div>
         ) : (
-          // if not signed in, keep it empty or add a sign-in button
           <div />
         )}
       </div>
