@@ -113,13 +113,24 @@
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 
+.cl-navbar svg{
+  display: none !important;
+  visibility: none;
+}
+
 .cl-navbarMobileMenuRow {
   background-color: transparent;
 }
 
-.cl-navbar {
-  background-color: transparent !important;
+.cl-userProfile-root .cl-navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  background-image: none !important;
 }
+
+
+
 
 .cl-scrollBox {
   background-color: transparent;
