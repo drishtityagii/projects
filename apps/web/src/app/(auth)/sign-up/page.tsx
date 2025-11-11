@@ -1,5 +1,5 @@
 'use client';
-import Header from "../../components/Header";
+import Header from "../../../components/header/Header";
 import { SignUp } from "@clerk/nextjs";
 
 export default function Page() {

@@ -1,0 +1,19 @@
+{
+  "name": "@layers/db",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": { "@prisma/client": "^5.22.0" },
+  "devDependencies": { "prisma": "^5.22.0" },
+  "scripts": {
+    "generate": "prisma generate",
+    "migrate": "prisma migrate dev",
+    "studio": "prisma studio"
+  }
+}

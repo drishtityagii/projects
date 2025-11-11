@@ -1,12 +1,38 @@
-version: '3.9'
 services:
+  pg:
+    image: postgres:16
+    container_name: layers_pg
+    environment:
+      POSTGRES_USER: layers
+      POSTGRES_PASSWORD: layers
+      POSTGRES_DB: layers
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U layers -d layers"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
   web:
     build:
-      context: ./apps/web
+      context: .                          # <-- repo root
+      dockerfile: apps/web/Dockerfile     # <-- Dockerfile path
+    container_name: layers_web
     env_file:
       - ./apps/web/.env.local
+    environment:
+      DATABASE_URL: postgresql://layers:layers@pg:5432/layers?schema=public
     ports:
       - "3000:3000"
     volumes:
-      - ./apps/web:/app
+      - ./apps/web:/app/apps/web          # bind-mount only the web app source
       - /app/node_modules
+    depends_on:
+      pg:
+        condition: service_healthy
+
+volumes:
+  pgdata:

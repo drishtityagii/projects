@@ -1,5 +1,5 @@
 import { currentUser } from "@clerk/nextjs/server";
-import Header from "../../components/Header";
+import Header from "../../../components/header/Header";
 
 export default async function Dashboard() {
   const user = await currentUser();
