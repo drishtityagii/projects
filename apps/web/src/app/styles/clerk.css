@@ -91,7 +91,7 @@
 }
 
 .cl-userButtonTrigger:hover {
-  background-color: #f9cfd7 !important; /* slightly darker pink */
+  background-color: var(--pink) !important; /* slightly darker pink */
 }
 
 .cl-userButtonPopoverCard {
@@ -159,7 +159,7 @@
 
 /* buttons */
 .cl-formButtonPrimary {
-  background-color: var(--pink-200, #fbcfe8) !important;
+  background-color: var(--sage) !important;
   color: white !important;
   border-radius: 0.9rem !important;
   font-weight: 600 !important;
@@ -167,7 +167,7 @@
 }
 
 .cl-formButtonPrimary:hover {
-  background-color: var(--pink-300, #f9a8d4) !important;
+  background-color: var(--sage-300, #5b7357) !important;
 }
 
 /* links (e.g., “Add another email address”) */

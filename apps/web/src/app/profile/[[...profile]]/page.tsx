@@ -1,4 +1,4 @@
-import { UserProfile } from "@clerk/nextjs";
+import { UserProfile, SignOutButton } from "@clerk/nextjs";
 
 
 export default function ProfilePage() {
@@ -11,6 +11,13 @@ export default function ProfilePage() {
           //   },
           }}
         />
+        <div className="flex justify-end">
+          <SignOutButton>
+            <button className="px-4 py-2 rounded-md text-white" style={{ backgroundColor: "#9CAF88" }}>
+              Sign out
+            </button>
+          </SignOutButton>
+        </div>
       </div>
     </main>
   )
