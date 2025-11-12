@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
+import { SignedIn, SignedOut } from '@clerk/nextjs';
 
 export default function Home() {
   return (
@@ -19,7 +19,6 @@ export default function Home() {
               </Link>
             </SignedOut>
             <SignedIn>
-              <UserButton afterSignOutUrl="/" />
             </SignedIn>
           </div>
         </div>

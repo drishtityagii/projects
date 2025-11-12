@@ -82,3 +82,111 @@
 .cl-footer {
     background: transparent !important;
 }
+
+/* === Clerk theming overrides === */
+.cl-userButtonTrigger {
+  background-color: var(--pink) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.cl-userButtonTrigger:hover {
+  background-color: #f9cfd7 !important; /* slightly darker pink */
+}
+
+.cl-userButtonPopoverCard {
+  border-radius: 0.75rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* optional – tweak Clerk dropdown text colors */
+.cl-userButtonPopoverCard,
+.cl-userButtonPopoverMain {
+  color: #333 !important;
+}
+
+/* === Clerk User Profile overrides === */
+
+/* overall background + layout */
+.cl-cardBox{
+  background-color: transparent !important;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
+}
+
+.cl-navbar svg{
+  display: none !important;
+  visibility: none;
+}
+
+.cl-navbarMobileMenuRow {
+  background-color: transparent;
+}
+
+.cl-userProfile-root .cl-navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  background-image: none !important;
+}
+
+
+
+
+.cl-scrollBox {
+  background-color: transparent;
+}
+
+/* card area (remove ugly box or background) */
+.cl-userProfile-card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* header/title */
+.cl-userProfile-headerTitle {
+  color: #000 !important;
+  font-size: 1.875rem !important; /* text-3xl */
+  font-weight: 600 !important;
+}
+
+/* label text and buttons */
+.cl-userProfile-sectionTitle,
+.cl-userProfile-formLabel {
+  color: #4b5563 !important;
+  font-weight: 500 !important;
+}
+
+/* buttons */
+.cl-formButtonPrimary {
+  background-color: var(--pink-200, #fbcfe8) !important;
+  color: white !important;
+  border-radius: 0.9rem !important;
+  font-weight: 600 !important;
+  transition: background 0.2s ease-in-out;
+}
+
+.cl-formButtonPrimary:hover {
+  background-color: var(--pink-300, #f9a8d4) !important;
+}
+
+/* links (e.g., “Add another email address”) */
+.cl-link {
+  color: #e9afa3 !important;
+  text-decoration: underline !important;
+}
+
+.cl-link:hover {
+  color: #d48b86 !important;
+}
+
+/* input fields */
+.cl-formFieldInput {
+  border-radius: 0.5rem !important;
+  border-color: #e5e7eb !important;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
+}
+
+.cl-footer {
+  background: transparent !important;
+}
