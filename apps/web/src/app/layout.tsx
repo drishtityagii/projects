@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";
 import "./styles/clerk.css";
-
+import "./styles/gpt.css";
 export const metadata: Metadata = {
   title: 'Layers',
   description: 'Wtv for now',

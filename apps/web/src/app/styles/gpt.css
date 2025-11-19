@@ -1,0 +1,176 @@
+.gpt-chatbox {
+  width: 100%;
+  max-width: 28rem; /* similar to max-w-md */
+  margin: 0 auto;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(168, 187, 160, 0.6); /* sage-tinted border */
+  background: rgba(255, 246, 248, 0.9);       /* soft pink background (var(--pink) ish) */
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(8px);
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #1f2937;
+}
+
+.gpt-chatbox-header {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #4b5563;
+}
+
+/* messages container */
+.gpt-chat-messages {
+  max-height: 16rem;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+/* generic bubble base */
+.gpt-chat-message {
+  display: inline-block;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.85rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 0.35rem;
+}
+
+/* assistant (left) */
+.gpt-chat-message--assistant {
+  background: #ffffff;
+  border: 1px solid rgba(229, 231, 235, 0.9);
+  color: #374151;
+}
+
+/* user (right) */
+.gpt-chat-message--user {
+  background: var(--sage);
+  border: 1px solid rgba(88, 107, 82, 0.8);
+  color: #ffffff;
+}
+
+/* thinking / loading bubble */
+.gpt-chat-message--thinking {
+  background: #ffffff;
+  border: 1px solid rgba(229, 231, 235, 0.9);
+  font-style: italic;
+  color: #6b7280;
+}
+
+/* layout for left/right bubbles */
+.gpt-chat-row {
+  display: flex;
+}
+
+.gpt-chat-row--assistant {
+  justify-content: flex-start;
+}
+
+.gpt-chat-row--user {
+  justify-content: flex-end;
+}
+
+/* input row */
+.gpt-chat-inputRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* text input */
+.gpt-chat-input {
+  flex: 1;
+  border-radius: 0.8rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.9rem;
+  background: #ffffff;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #374151;
+  outline: none;
+}
+
+.gpt-chat-input::placeholder {
+  color: #9ca3af;
+}
+
+.gpt-chat-input:focus {
+  border-color: var(--sage);
+  box-shadow: 0 0 0 1px rgba(168, 187, 160, 0.7);
+}
+
+/* send button */
+.gpt-chat-send {
+  border-radius: 0.8rem;
+  border: none;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: var(--sage);
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.08s ease-out, box-shadow 0.08s ease-out, opacity 0.15s ease-out;
+  box-shadow: 0 4px 10px rgba(168, 187, 160, 0.35);
+}
+
+.gpt-chat-send:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(168, 187, 160, 0.4);
+}
+
+.gpt-chat-send:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(168, 187, 160, 0.35);
+}
+
+.gpt-chat-send:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* subtle scrollbar tweak */
+.gpt-chat-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.gpt-chat-messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gpt-chat-messages::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.6);
+  border-radius: 999px;
+}
+
+/* Dark mode alignment with your global theme */
+@media (prefers-color-scheme: dark) {
+  .gpt-chatbox {
+    background: rgba(15, 23, 42, 0.85);
+    border-color: rgba(148, 163, 184, 0.5);
+    color: #e5e7eb;
+  }
+
+  .gpt-chat-message--assistant {
+    background: #020617;
+    border-color: rgba(30, 64, 175, 0.45);
+    color: #e5e7eb;
+  }
+
+  .gpt-chat-message--user {
+    background: var(--sage);
+    color: #020617;
+  }
+
+  .gpt-chat-input {
+    background: #020617;
+    border-color: #374151;
+    color: #e5e7eb;
+  }
+
+  .gpt-chat-input::placeholder {
+    color: #6b7280;
+  }
+}
