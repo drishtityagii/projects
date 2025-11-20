@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useUser, UserButton } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
 
 export default function Header() {
-  const { isSignedIn, user } = useUser();
+  const { isSignedIn } = useUser();
 
   return (
     <header className="w-full bg-[var(--sage)] text-white">
