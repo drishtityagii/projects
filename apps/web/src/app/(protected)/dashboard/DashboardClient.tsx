@@ -20,8 +20,6 @@ export default function DashboardClient({ firstName, email }: DashboardClientPro
         <p className="mt-2 text-sm text-gray-600">
           Signed in as: {email}
         </p>
-
-        {/* Chatbox centered under welcome */}
         <div className="mt-6 w-full flex justify-center">
           <ChatBox />
         </div>

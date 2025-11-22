@@ -72,9 +72,6 @@ export default function ChatBox() {
 
   return (
     <div className="gpt-chatbox">
-      {/* Optional tiny header if you want one */}
-      {/* <div className="gpt-chatbox-header">Skincare assistant</div> */}
-
       <div className="gpt-chat-messages">
         {messages
           .filter((m) => m.role !== "system")
